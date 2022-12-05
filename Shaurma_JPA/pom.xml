@@ -13,7 +13,7 @@
 	<groupId>Programming</groupId>
 	<artifactId>Shaurma_JPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TacoCloud_JPA</name>
+	<name>Shaurma_JPA</name>
 	<description>Demo project for Spring Boot</description>
 	
 	<properties>
