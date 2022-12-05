@@ -11,7 +11,7 @@
 	</parent>
 	
 	<groupId>Programming</groupId>
-	<artifactId>TacoCloud_JPA</artifactId>
+	<artifactId>Shaurma_JPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TacoCloud_JPA</name>
 	<description>Demo project for Spring Boot</description>
