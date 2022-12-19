@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		 xmlns:th="http://www.thymeleaf.org">
+ 	<head>
+ 		<title>Shaurma House</title>
+ 	</head>
+ 
+ 	<body>
+ 		<h1>Добро пожаловать!</h1>
+		<img th:src="@{/images/shaurma.png}"/>
+		
+		<form method="GET" th:action="@{/design}">
+			<div>
+ 				<input type="submit" value="Заказать"/>	
+ 			</div>
+		
+		
+		</form>
+		
+ 	</body>
+</html>
