@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:th="http://www.thymeleaf.org">
+ 
+ 	<head>
+ 		<title>Shaurma House</title>
+ 	</head>
+ 
+ 	<body>
+ 		<h1>Регистрация</h1>
+ 		
+ 		<img th:src="@{/images/shaurma.png}"/>
+ 
+ 		<form method="POST" th:action="@{/register}" id="registerForm">
+ 		
+ 			<label for="username">Логин: </label>
+ 				<input type="text" name="username"/><br/>
+ 
+ 			<label for="password">Пароль: </label>
+ 				<input type="password" name="password"/><br/>
+ 		
+ 			<label for="confirm">Повторите пароль: </label>
+ 				<input type="password" name="confirm"/><br/>
+ 		
+ 			<label for="fullname">Имя: </label>
+ 				<input type="text" name="fullname"/><br/>
+ 		
+ 			<label for="street">Улица: </label>
+ 				<input type="text" name="street"/><br/>
+ 
+	 		<label for="city">Город: </label>
+ 				<input type="text" name="city"/><br/>
+ 		
+ 			<label for="state">Область: </label>
+ 				<input type="text" name="state"/><br/>
+ 
+	 		<label for="phone">Телефон: </label>
+ 				<input type="text" name="phone"/><br/>
+ 		
+ 			<input type="submit" value="Зарегистрировать"/>
+ 		</form>
+ 	</body>
+</html>
