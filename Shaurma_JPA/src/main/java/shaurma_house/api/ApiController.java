@@ -61,7 +61,7 @@ public class ApiController {
 	
 	public Ingredient getIngredientById(String ingredientId) {
 		 ResponseEntity<Ingredient> responseEntity = rest.getForEntity("http://localhost:8080/ingredients/{id}",
-				 														Ingredient.class, ingredientId);
+				 						Ingredient.class, ingredientId);
 		 
 		 log.info("Fetched time: {}",
 		 responseEntity.getHeaders().getDate());
