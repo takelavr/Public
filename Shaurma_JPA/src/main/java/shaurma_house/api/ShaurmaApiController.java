@@ -33,9 +33,9 @@ public class ShaurmaApiController {
 	//Получение шаурмы по по Id Get
 	@GetMapping("/{id}")
 	public ResponseEntity<Shaurma> shaurmaById(@PathVariable("id") Long id) {
-		Optional<Shaurma> optTaco = shaurmaRepo.findById(id);
-		if (optTaco.isPresent()) {
-			return new ResponseEntity<>(optTaco.get(), HttpStatus.OK);
+		Optional<Shaurma> opt = shaurmaRepo.findById(id);
+		if (opt.isPresent()) {
+			return new ResponseEntity<>(opt.get(), HttpStatus.OK);
 		}
 		return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
 	}
