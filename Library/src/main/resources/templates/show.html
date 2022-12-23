@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/vaterialize.min.css">
+</head>
+<body>
+
+    <h3>Книга</h3>
+    <table class="centered">
+        <thead>
+        <tr>
+            <th>Автор</th>
+            <th>Название</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <td th:text="${book.author}"/>
+        <td th:text="${book.name}"/>
+
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+
+<h3>Редактировать запись</h3>
+
+<div class="container center">
+    <form action="#" th:action="@{'/'+${book.id}}" th:object="${book}" method="post">
+        <p>Автор: <input type="text" th:field="*{author}" /></p>
+        <p>Название: <input type="text" th:field="*{name}" /></p>
+        <p><input type="submit" value="Редактировать запись" class="btn btn-primary green" /> </p>
+    </form>
+</div>
+
+</body>
+</html>
