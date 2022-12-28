@@ -29,7 +29,7 @@ public class XmlService {
        log.info("Repo saved: " + cities);
     }
 
-    //парсит XML в Мапу City - (данные)
+    //парсит XML в List City - (данные)
     public List<City> parseXml(File file) throws ParserConfigurationException, IOException, SAXException {
 
         File xmlFile = new File(Constant.PATHOFFILE);
