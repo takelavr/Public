@@ -1,0 +1,12 @@
+com\rogovig\tgbot\command\HelpCommand.class
+com\rogovig\tgbot\command\NoCommand.class
+com\rogovig\tgbot\service\SendBotMessageService.class
+com\rogovig\tgbot\bot\TGBot.class
+com\rogovig\tgbot\service\SendBotMessageServiceImpl.class
+com\rogovig\tgbot\TgBotApplication.class
+com\rogovig\tgbot\command\CommandName.class
+com\rogovig\tgbot\command\UnknownCommand.class
+com\rogovig\tgbot\command\StopCommand.class
+com\rogovig\tgbot\command\CommandContainer.class
+com\rogovig\tgbot\command\StartCommand.class
+com\rogovig\tgbot\command\Command.class

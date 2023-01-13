@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  tgbot:
+    depends_on:
+      - tgbot_db
+    container_name: tgbot-core
+    build:
+      context: .
+    environment:
+      BOT_NAME: ${BOT_NAME}
+      BOT_TOKEN: ${BOT_TOKEN}
+      BOT_DB_USERNAME: ${POSTGRESQL_USER}
+      BOT_DB_PASSWORD: ${POSTGRESQL_PASSWORD}
+      restart: always
+  tgbot_db:
+    container_name: tgbot_db
+    image: sharecrest/postgresql-14.6-plv8
+    restart: always
+    environment:
+      POSTGRESQL_HOST: 'tgbot_db'
+      POSTGRESQL_USER: 'dev'
+      POSTGRESQL_PASSWORD: 'dev'
+      POSTGRESQL_ROOT_PASSWORD: 'root'
+
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
